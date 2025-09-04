@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
     <title>Hélio Borges</title>
 </head>
 
@@ -11,106 +13,72 @@
     <header>
         <div class="interface">
             <div id="box-logo">
-                <a href="#" id="logo">&lt;Hélio Borges/&gt;</a>
-                <span class="cursor"></span>
+                <a href="#">
+                    <i id="logo" class="fa-solid fa-code">
+                        Helio Borges
+                    </i>
+                </a>
             </div>
 
             <nav id="navbar-desktop">
-                <ul id="nav-list">
+                <ul>
                     <li>
-                        <a href="#" class="item-list">Inicio</a>
+                        <a href="#">Inicio</a>
                     </li>
 
                     <li>
-                        <a href="#about" class="item-list">Sobre</a>
+                        <a href="#about">Especialidades</a>
                     </li>
 
                     <li>
-                        <a href="#tech" class="item-list">Tecnologias</a>
+                        <a href="#tech">Sobre</a>
                     </li>
 
                     <li>
-                        <a href="#project" class="item-list">Projetos</a>
+                        <a href="#project">Projetos</a>
                     </li>
                 </ul>
             </nav>
 
-            <div id="box-contato">
-                <a href="contact">Contato</a>
+            <div class="box-btn">
+                <a href="contact">
+                    <button>Contato</button>
+                </a>
             </div>
         </div>
     </header>
 
-    <main>
+    <main id="container">
+
         <section id="home">
-            <div id="box-content">
-                <h1 id="main-title">Hélio Borges</h1>
-                <p id="main-description">Desenvolvedor Front-End</p>
-                <a href="#">Ver Projetos</a>
+            <div class="interface">
+                <div class="flex">
+                    <div class="top-content">
+                        <h1>
+                            TRANSFORMANDO IDEIAS EM EXPERIÊNCIAS DIGITAIS
+                            <span class="cursor"></span>
+                        </h1>
+
+                        <p>
+                            Criatividade e inovação andam lado a lado. Com uma combinação única de design impactante,
+                            funcionalidade intuitiva e otimização para resultados, estou pronto para criar a presença
+                            online dos seus sonhos.
+                        </p>
+
+                        <div class="box-btn">
+                            <a href="#">
+                                <button>Ver meus projetos</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="top-banner">
+                        <div class="image-profile">
+                            <img src="./src/img/image-helio.png" alt="Imagem do Helio">
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div id="box-profile">
-                <img id="profile-photo" src="#" alt="foto-perfil">
-            </div>
-        </section>
-
-        <section id="about" class="about">
-            <h2 class="title">Sobre mim</h2>
-
-            <div id="box-about">
-                <p id="about-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus esse aliquam accusantium doloribus
-                    qui in quia! Reiciendis velit tempore rerum ea, illum saepe eum iste quae inventore quisquam,
-                    cupiditate alias?
-                </p>
-            </div>
-        </section>
-
-        <section id="project" class="project">
-            <h2 class="title">Meus projetos</h2>
-
-            <div class="project-box">
-                <div class="project-card">
-                    <img src="#" alt="Projeto-01">
-                    <h3 class="info-project">Projeto 01</h3>
-                    <p class="description-project">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                    <a href="#" class="link-project">Visitar</a>
-                </div>
-
-                <div class="project-card">
-                    <img src="#" alt="Projeto-02">
-                    <h3 class="info-project">Projeto 02</h3>
-                    <p class="description-project">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                    <a href="#" class="link-project">Visitar</a>
-                </div>
-
-                <div class="project-card">
-                    <img src="#" alt="Projeto-03">
-                    <h3 class="info-project">Projeto 03</h3>
-                    <p class="description-project">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                    <a href="#" class="link-project">Visitar</a>
-                </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <h2 class="title">Contato</h2>
-
-            <form action="" id="form" class="form-contact">
-                <div class="form-name">
-                    <input type="text" placeholder="Nome" class="form-field">
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Digite sua Mensagem" class="form-text"></textarea>
-                </div>
-
-                <button>Enviar</button>
-            </form>
         </section>
     </main>
 </body>
