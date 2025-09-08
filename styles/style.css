@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary_red: #8b0a1a;
+    --dark_red: #A4161A;
+    --black: #1A1A1A;
+    --grey: #6E6E6E;
+    --white: #F5F5F5;
+}
+
+/*Estilos Gerais*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.interface {
+    max-width: 1200px;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+.btn-all {
+    color: var(--white);
+    font-weight: 600;
+    border: 2px solid var(--grey);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.btn-all:hover {
+    background-color: var(--dark_red);
+    border: 2px solid var(--dark_red);
+}
+
+.btn-all:active {
+    background-color: var(--primary_red);
+    transform: scale(0.95);
+}
+
+/*Estilo do Cabeçalho*/
+
+header {
+    background-color: var(--black);
+    padding: 10px 0;
+}
+
+header .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo img {
+    width: 150px;
+}
+
+#navbar-desktop ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.item-list {
+    color: var(--white);
+    font-weight: 600;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.item-list::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    background-color: var(--dark_red);
+    transform: translateX(-50%) scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.item-list:hover {
+    color: var(--dark_red);
+}
+
+.item-list:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
