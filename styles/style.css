@@ -51,7 +51,10 @@ body {
 /*Estilo do Cabeçalho*/
 
 header {
-    background-color: var(--black);
+    background-color: transparent;
+    width: 100%;
+    position: fixed;
+    top: 0;
     padding: 10px 0;
 }
 
@@ -97,4 +100,48 @@ header .interface {
 
 .item-list:hover::after {
     transform: translateX(-50%) scaleX(1);
+}
+
+/*Estilo do Cabeçalho*/
+
+#hero {
+    background: linear-gradient(to left, var(--black) 70%, var(--primary_red) 30%);
+    padding-top: 60px;
+}
+
+#hero .interface {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.image-hero {
+    line-height: 0;
+}
+
+.image-hero img {
+    height: 580px;
+}
+
+.content-hero {
+    padding-top: 30px;
+}
+
+.content-hero h1 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.content-hero h1 span {
+    color: var(--dark_red);
+    font-weight: 700;
+}
+
+.content-hero p {
+    color: var(--white);
+    font-size: 1.15rem;
+    line-height: 1.5;
+    margin: 20px 0;
+    text-align: justify;
 }
