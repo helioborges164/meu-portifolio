@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --primary_red: #8b0a1a;
-    --dark_red: #A4161A;
+    --primary-red: #8b0a1a;
+    --dark-red: #A4161A;
     --black: #1A1A1A;
+    --black-body: #141414;
     --grey: #6E6E6E;
     --white: #F5F5F5;
 }
@@ -20,6 +21,7 @@
 
 body {
     overflow-x: hidden;
+    background-color: var(--black-body);
 }
 
 .interface {
@@ -39,13 +41,22 @@ body {
 }
 
 .btn-all:hover {
-    background-color: var(--dark_red);
-    border: 2px solid var(--dark_red);
+    background-color: var(--dark-red);
+    border: 2px solid var(--dark-red);
 }
 
 .btn-all:active {
-    background-color: var(--primary_red);
+    background-color: var(--primary-red);
     transform: scale(0.95);
+}
+
+.title {
+    font-size: 2.4rem;
+    color: var(--white);
+}
+
+.title span {
+    color: var(--dark-red);
 }
 
 /*Estilo do Cabeçalho*/
@@ -89,23 +100,23 @@ header .interface {
     width: 100%;
     bottom: 0;
     left: 50%;
-    background-color: var(--dark_red);
+    background-color: var(--dark-red);
     transform: translateX(-50%) scaleX(0);
     transition: all 0.3s ease-in-out;
 }
 
 .item-list:hover {
-    color: var(--dark_red);
+    color: var(--dark-red);
 }
 
 .item-list:hover::after {
     transform: translateX(-50%) scaleX(1);
 }
 
-/*Estilo do Cabeçalho*/
+/*Estilo do Hero*/
 
 #hero {
-    background: linear-gradient(to left, var(--black) 70%, var(--primary_red) 30%);
+    background: linear-gradient(to left, var(--black) 70%, var(--primary-red) 30%);
     padding-top: 60px;
 }
 
@@ -128,13 +139,13 @@ header .interface {
 }
 
 .content-hero h1 {
-    font-size: 2.6rem;
-    font-weight: 600;
+    font-size: 2.8rem;
+    font-weight: 500;
     color: var(--white);
 }
 
 .content-hero h1 span {
-    color: var(--dark_red);
+    color: var(--dark-red);
     font-weight: 700;
 }
 
@@ -144,4 +155,39 @@ header .interface {
     line-height: 1.5;
     margin: 20px 0;
     text-align: justify;
+}
+
+/*Estilo do Sobre*/
+
+#about {
+    padding: 80px 0;
+}
+
+#about .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+.content-about p {
+    color: var(--white);
+    margin: 30px 0;
+}
+
+.image-about img {
+    height: 350px;
+    width: 300px;
+    border-radius: 20px;
+    border: 2px solid var(--grey);
+    background-color: var(--black);
+    box-shadow: 0 0 10px var(--dark-red);
+}
+
+
+
+.network .btn-all {
+    padding: 10px;
+    font-size: 20px;
+    margin-right: 10px;
 }
